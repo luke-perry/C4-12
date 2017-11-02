@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0, user-scalable=no;">
+<title>C4:12 | Peninsula Baptist - College and Young Adult Ministry</title>
+
+<!--- Import stylesheet --->
+<link rel="stylesheet" href="CSS/Main.css" type="text/css">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css"> <!--- Carousel -->
+<link rel="stylesheet" href="CSS/Carousel.css" type="text/css">
+
+<!--- External library imports --->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!--- Standard jQuery --->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFaCaqne7z69RoOKRAWXkceUg_R1hij6o"></script> <!--- Google maps API call --->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> <!--- Quick javscript email --->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script> <!--- Carousel -->
+
+<!--- Internal Javascript import --->
+<script src="JS/Main.js"></script> <!-- Standard javascript, like sticky menu -->
+<script src="JS/Email.js"></script> <!-- Contact us scripting -->
+<script src="JS/Map.js"></script> <!-- Google Map API (Mapbox)  -->
+<script src="JS/Mobile.js"></script> <!-- Google Map API (Mapbox)  -->
+
+<!--- Establish email --->
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_7M4kGpX1W5zYIAHs5KFBT");
+   })();
+</script>
+</head>
+<body bgcolor="#000000">
+
+<!-- Top Banner -->
+<div id="Banner">
+   <img src="Img/Logo.png" />
+</div>
+
+<!-- Menu Bar -->
+<div id="Menu" class="black_menu">
+   <a href="#" id="menu_about" class="menu_text">About Us</a>
+   <a href="#" id="menu_join" class="menu_text">Come Join Us</a>
+   <a href="#" id="menu_peninsula" class="menu_text">Peninsula</a>
+   <a href="#" id="menu_contact" class="menu_text">Contact Us</a>
+   <a href="#" id="menu_events" class="menu_text">Events</a>
+   <a class="menu_buttom" id="menu_link">menu</a>
+</div>
+
+<!--- Mobile Menu --->
+<div class="menu">
+  <div class="cell"><a id="mobile_412">4:12</a></div>
+  <div class="cell"><a id="mobile_about">about</a></div>
+  <div class="cell"><a id="mobile_join">join</a></div>
+  <div class="cell"><a id="mobile_map">map</a></div>
+  <div class="cell"><img src="Img/Alternate_Logo.png" class="alt_logo" /></div>
+  <div class="cell"><a id="mobile_pbc">PBC</a></div>
+  <div class="cell"><a id="mobile_contact">contact</a></div>
+  <div class="cell"><a id="mobile_close">X</a></div>
+  <div class="cell"><a id="mobile_events">events</a></div>
+</div>
+
+<!-- Verse Bar -->
+<div id="Verse">
+   <div id="VerseSpacer">
+      Don't let anyone look down on you because you are young, but set an example for the believers in speech, in conduct, in love, in faith, and in purity. - 1 Timothy 4:12
+   </div>
+</div>
+
+<!-- About Us Section -->
+<div id="About">
+   <br><br><br>
+   <div id="aboutTitle">We love God and people</div>
+
+   <div id="aboutContent">
+      C4:12 is a ministry of Peninsula Baptist Church in Mooresville, NC.
+      We are about reaching and growing people into Godly examples that live
+      Biblically-based, Gospel-centered, & Christ-focused lifestyles... And we have a ton of fun in the process!
+   </div>
+
+   <div id="aboutClosing">
+      we: <strong>Believe. Love. Serve. Study. & Fellowship.</strong>
+   </div>
+</div>
+
+<!-- Visit Us Section -->
+<div id="VisitTitle">Free? Come Join Us!</div>
+<div id="VisitInfo">
+   <div id="visitContainer">
+      <div class="VisitInfoTitle">When and Where?</div>
+
+      <br><strong style="font-family: Arial Black, Gadget, sans-serif;">C4:12</strong>
+      - 10am to 10:45am - Room 225.
+
+      <br><br><strong style="font-family: Arial Black, Gadget, sans-serif;">Peninsula Worship</strong>
+      - 11am to noon - Main Campus<br><br>
+
+      <div id="visitClosing">See map below. Greeters will help you to find your way inside once you arrive.</div>
+   </div>
+</div>
+
+<!-- Google Map embed -->
+<div id="map"></div>
+
+<!-- Peninsula Baptist Church Bar -->
+<div id="Peninsula">
+  <div class="container">
+      <div id="pbcContent">
+        Peninsula Baptist Church was established in Mooresville over 30 years ago.
+        We believe that God has placed us here to build solid families founded on
+        God’s Word, to serve with joy, and to communicate His love to others.
+      </div>
+  </div>
+</div>
+
+<!-- Contact Us Section -->
+<div id="ContactUs">
+  <div id="ContactOutline">
+     <div id="ContactUsTitle">Contact Us</div>
+
+     <input type="text" id="FirstandLast" name="FirstandLast" class="input1" placeholder="Input your name">
+
+     <br><br><br>
+     <input type="text" id="EmailAddress"  name="EmailAddress" class="input1" placeholder="And email address"></input>
+
+     <br class="br1"><br class="br1"><br class="br1">
+     <textarea id="input-message"  name="input-message" class="input2" placeholder="What have you got to say? Someone's Listening." rows="3"></textarea>
+
+     <br><br>
+     <input id="SubmitContact" name="SubmitContact" type="submit" value="Send Message" class="input3">
+  </div>
+</div>
+
+<!-- Events Section -->
+<div class="whiteFill"></div>
+<div id="Events">
+   <!-- Flickity HTML init Carousel -->
+   <div class="gallery js-flickity">
+     <div class="gallery-cell">
+        <span class="event-title">ASK</span><br /><br />
+        <span class="event-date">Tuesdays</span><br />
+        <span class="event-date"><strong>8pm-10pm</strong></span><br /><br />
+
+        <div class="event-details">A time for real questions about life. Start with a desert & coffee hangout, then time in a study by Ravi Zacharias.</div><br />
+        <div class="event-button">
+           <button type="button" class="event-register">Register</button>
+        </div>
+     </div>
+     <div class="gallery-cell">
+        <span class="event-title">Hiking</span><br /><br />
+        <span class="event-date">June 25th, 2017</span><br />
+        <span class="event-date"><strong>2pm-9pm</strong></span><br /><br />
+
+        <div class="event-details">We'll meet at PBC, then head to hike. It won't be too strenuous, so come even if cardio hasn't happened lately!</div><br />
+        <div class="event-button">
+           <button type="button" class="event-register">Register</button>
+        </div>
+     </div>
+     <div class="gallery-cell">
+        <span class="event-title">Game Night</span><br /><br />
+        <span class="event-date">June 29th, 2017</span><br />
+        <span class="event-date"><strong>time tba</strong></span><br />
+
+        <div class="event-details">Food, board games, video games, hanging out. Yeah, game nights are classic C4:12 fun.</div><br />
+        <div class="event-button">
+           <button type="button" class="event-register">Register</button>
+        </div>
+     </div>
+     <div class="gallery-cell">
+        <span class="event-title">Dive In</span><br /><br />
+        <span class="event-date">July 7th, 2017</span><br />
+        <span class="event-date"><strong>time tba</strong></span><br /><br />
+
+        <div class="event-details">Hanging at the pool, snacks, then watching a movie while we float in the pool. Yeah, it's as good as it sounds.</div><br />
+        <div class="event-button">
+           <button type="button" class="event-register">Register</button>
+        </div>
+     </div>
+     <div class="gallery-cell">
+        <span class="event-title">Game Night</span><br /><br />
+        <span class="event-date">July 13th, 2017</span><br />
+        <span class="event-date"><strong>time tba</strong></span><br /><br />
+
+        <div class="event-details">Food, board games, video games, hanging out. Yeah, game nights are classic c4:12 fun.</div><br />
+        <div class="event-button">
+           <button type="button" class="event-register">Register</button>
+        </div>
+     </div>
+     <div class="gallery-cell">
+        <span class="event-title">Carowinds</span><br /><br />
+        <span class="event-date">July 30th, 2017</span><br />
+        <span class="event-date"><strong>time tba</strong></span><br /><br />
+
+        <div class="event-details">We'll meet and head to spend a half-day at the theme park. After, we'll grab some dinner.</div><br />
+        <div class="event-button">
+           <button type="button" class="event-register">Register</button>
+        </div>
+     </div>
+     <div class="gallery-cell">
+        <span class="event-title">Escape room</span><br /><br />
+        <span class="event-date">August 12th, 2017</span><br />
+        <span class="event-date"><strong>time tba</strong></span><br /><br />
+
+        <div class="event-details">We will head down to an escape room for an hour of high-paced fun. And food will be involved.</div><br />
+        <div class="event-button">
+           <button type="button" class="event-register">Register</button>
+        </div>
+     </div>
+   </div>
+</div>
+<div class="whiteFill"></div>
+
+<!-- Footer Section -->
+<div id="Footer">
+  <div id="FooterContainer">
+     <br><br>
+     <div class="FooterTitle"><strong>C4:12</strong> - College & Young Adult Ministry</div>
+     <div class="FooterContent">A ministry of <strong>Peninsula Baptist Church</strong> - Mooresville, NC.</div>
+
+     <br><br>
+     <a href="http://www.facebook.com/groups/365178063522546/" target="_blank">
+     <img src="Img/facebook.png" alt="Find us on facebook" align="Center"></a><br>
+
+     <button name="Contact" value="Submit" type="button" id="contactButton"> <strong>&#8594;</strong> Contact Us</button>
+
+     <div id="FooterCopy">Copyright 2017. All rights reserved. Privacy and Use Statement.</div>
+  </div>
+</div>
+
+</body>
+</html>
